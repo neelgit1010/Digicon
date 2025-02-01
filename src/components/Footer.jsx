@@ -1,147 +1,93 @@
 import { Link } from "react-router-dom";
-import { FaInstagram } from "react-icons/fa6";
-import { FaFacebook } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaLinkedin, FaYoutube } from "react-icons/fa";
+
 const Footer = () => {
   return (
-    <div className="p-20 w-full bg-blue-700 flex flex-col gap-4">
-      <div className="flex flex-col justify-between text-white font-semibold sm:flex-row">
+    <div className="p-10 sm:p-20 w-full bg-blue-700 flex flex-col gap-10">
+
+      <div className="flex flex-col sm:flex-row justify-between text-white font-semibold gap-6 text-center sm:text-left">
         <div className="flex flex-col gap-2">
-          <h1>Quick Links</h1>
+          <h1 className="text-lg font-bold">Quick Links</h1>
           <Link to="/">
-            {" "}
             <p>Home</p>
           </Link>
           <Link to="/">
-            {" "}
             <p>About Us</p>
           </Link>
           <Link to="/">
-            {" "}
             <p>Our Services</p>
           </Link>
           <Link to="/">
-            {" "}
             <p>Blogs</p>
           </Link>
           <Link to="/">
-            {" "}
             <p>Contact Us</p>
           </Link>
         </div>
         <div className="flex flex-col gap-2">
-          <h1>Quick Links</h1>
+          <h1 className="text-lg font-bold">Resources</h1>
           <Link to="/">
-            {" "}
-            <p>Home</p>
+            <p>Privacy Policy</p>
           </Link>
           <Link to="/">
-            {" "}
-            <p>About Us</p>
+            <p>Terms of Service</p>
           </Link>
           <Link to="/">
-            {" "}
-            <p>Our Services</p>
+            <p>FAQs</p>
           </Link>
           <Link to="/">
-            {" "}
-            <p>Blogs</p>
-          </Link>
-          <Link to="/">
-            {" "}
-            <p>Contact Us</p>
+            <p>Support</p>
           </Link>
         </div>
         <div className="flex flex-col gap-2">
-          <h1>Quick Links</h1>
+          <h1 className="text-lg font-bold">Company</h1>
           <Link to="/">
-            {" "}
-            <p>Home</p>
+            <p>Careers</p>
           </Link>
           <Link to="/">
-            {" "}
-            <p>About Us</p>
+            <p>Testimonials</p>
           </Link>
           <Link to="/">
-            {" "}
-            <p>Our Services</p>
-          </Link>
-          <Link to="/">
-            {" "}
-            <p>Blogs</p>
-          </Link>
-          <Link to="/">
-            {" "}
-            <p>Contact Us</p>
+            <p>Partners</p>
           </Link>
         </div>
-        <div className="flex flex-col gap-2">
-          <h1>Quick Links</h1>
-          <Link to="/">
-            {" "}
-            <p>Home</p>
-          </Link>
-          <Link to="/">
-            {" "}
-            <p>About Us</p>
-          </Link>
-          <Link to="/">
-            {" "}
-            <p>Our Services</p>
-          </Link>
-          <Link to="/">
-            {" "}
-            <p>Blogs</p>
-          </Link>
-          <Link to="/">
-            {" "}
-            <p>Contact Us</p>
-          </Link>
+        <div className="flex flex-col gap-2 items-center sm:items-start">
+          <h1 className="text-lg font-bold">Follow Us</h1>
+          <div className="flex gap-4">
+            <FaFacebook size={24} />
+            <FaInstagram size={24} />
+            <FaLinkedin size={24} />
+            <FaYoutube size={24} />
+          </div>
         </div>
       </div>
-      <hr className="my-8 bg-gray-500" />
-      <div className="flex flex-col justify-between items-center gap-4 text-white sm:flex-row">
-        <div>
-          <img src="/banner.png" width="200px" alt="" />
-        </div>
-        <div>
-          <h1 className="text-2xl font-semibold">Contact Information</h1>
-        </div>
-        <div>
-          <button className="bg-white text-blue-500 py-2 px-4 rounded-lg w-full transition-all duration-300 font-semibold hover:bg-blue-800 hover:text-white">
-            Get Quotes
-          </button>
-        </div>
-        <div>
-          <img src="/map.png" alt="" />
-        </div>
+
+      <hr className="my-6 border-gray-500" />
+
+      <div className="flex flex-col sm:flex-row justify-between items-center text-white gap-6">
+        <img src="/banner.png" className="w-32 sm:w-48" alt="Logo" />
+        <h1 className="text-lg font-semibold text-center sm:text-left">
+          Contact Information
+        </h1>
+        <button className="bg-white text-blue-500 py-2 px-6 rounded-lg w-full sm:w-auto transition-all duration-300 font-semibold hover:bg-blue-800 hover:text-white">
+          Get Quotes
+        </button>
+        <img src="/map.png" className="w-32 sm:w-48" alt="Map" />
       </div>
-      <div className="flex flex-col justify-between items-center gap-4 text-white sm:flex-row">
-        <div>
-          <p className="w-[200px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-            est earum minima rerum maiores qui incidunt quasi ullam sunt
-            expedita?
-          </p>
-        </div>
-        <div className="max-w-[200px]">
+
+      {/* Contact & Info - Column on mobile, Row on desktop */}
+      <div className="flex flex-col sm:flex-row justify-between text-white text-center sm:text-left gap-6">
+        <p className="max-w-xs mx-auto sm:mx-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, est
+          earum minima rerum maiores qui incidunt quasi ullam sunt expedita?
+        </p>
+        <div className="max-w-xs">
           <p>9330383733 / 8420848164</p>
-          <p>9330383733</p>
           <p>digiconmarketers@gmail.com</p>
           <p>
             Shibani Mahamaya Housing, Street 43, Block AC 64, NewTown Action
             Area I, Kolkata 700163
           </p>
-        </div>
-        <div className="flex gap-4">
-           <FaFacebook size={30} />
-          <FaInstagram size={30} />
-          <FaLinkedin size={30} />
-          <FaYoutube size={30} />
-        </div>
-        <div>
-          <p className="w-[200px] text-blue-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum ratione ducimus asperiores aperiam exercitationem voluptatum veritatis rerum, dolores maiores!</p>
         </div>
       </div>
     </div>
