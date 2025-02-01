@@ -141,7 +141,7 @@ const Footer = () => {
           <FaYoutube size={30} />
         </div>
         <div>
-          <p></p>
+          <p className="w-[200px] text-blue-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore cum ratione ducimus asperiores aperiam exercitationem voluptatum veritatis rerum, dolores maiores!</p>
         </div>
       </div>
     </div>
