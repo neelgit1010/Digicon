@@ -25,18 +25,18 @@ const Footer = () => {
           </Link>
         </div>
         <div className="flex flex-col gap-2">
-          <h1 className="text-lg font-bold">Resources</h1>
+          <h1 className="text-lg font-bold">Our Best Services</h1>
           <Link to="/">
-            <p>Privacy Policy</p>
+            <p>Web Development</p>
           </Link>
           <Link to="/">
-            <p>Terms of Service</p>
+            <p>Online Digital</p>
           </Link>
           <Link to="/">
-            <p>FAQs</p>
+            <p>Software</p>
           </Link>
           <Link to="/">
-            <p>Support</p>
+            <p>Mobile</p>
           </Link>
         </div>
         <div className="flex flex-col gap-2">
